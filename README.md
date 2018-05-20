@@ -1,42 +1,19 @@
-Install RedHat OpenShift Origin in your development box.
+Install RedHat OpenShift Origin on your CentOS 7 box.
 
 ## Installation
 
-1. Create a VM as explained in https://youtu.be/aqXSbDZggK4 (this video) by Grant Shipley
+1. Use a CentOS7 Linux host [I suggest you install=> CentOS-7-x86_64-DVD-1611.iso]
 
 2. Define mandatory variables for the installation process
 
 ```
 # Domain name to access the cluster
-$ export DOMAIN=<public ip addres>.nip.io 
+$ export DOMAIN=yourdomain.local 
 
-# User created after installation
-$ export USERNAME=<current user name>
+# User created after installation [I used root, for my tests]
+$ export USERNAME=TheUserUAreLoggedInWith      
 
 # Password for the user
 $ export PASSWORD=password
 ```
 
-3. Define optional variables for the installation process
-
-```
-# Instead of using loopback, setup DeviceMapper on this disk.
-# !! All data on the disk will be wiped out !!
-$ export DISK="/dev/sda"
-```
-
-3. Run the automagic installation script as root:
-
-```
-curl https://raw.githubusercontent.com/gshipley/installcentos/master/install-openshift.sh | /bin/bash
-```
-
-## Development
-
-For development it's possible to switch the script repo
-
-```
-# Change location of source repository
-$ export SCRIPT_REPO="https://raw.githubusercontent.com/gshipley/installcentos/master"
-$ curl $SCRIPT_REPO/install-openshift.sh | /bin/bash
-```
