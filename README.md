@@ -4,7 +4,10 @@ Install RedHat OpenShift Origin on your CentOS 7 box.
 
 1. Use a CentOS7 Linux host [I suggest you install=> CentOS-7-x86_64-DVD-1611.iso]
 
-2. Do the following   yum update -y      reboot       yum install -y git docker vim docker
+2. Do the following  
+$ yum update -y      
+$ reboot       
+$ yum install -y git docker vim docker
    
 3. Create a ssh key and copy it using the folllowing commands    ssh-keygen     ssh-copy-id root@CentOS-IP
 
