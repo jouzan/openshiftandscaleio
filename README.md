@@ -38,10 +38,11 @@ $ export PASSWORD=password
 ```
    $ cd openshiftandscaleio
    $ MDM_IP=MDM1IP,MDM2IP rpm -ivh EMC-ScaleIO-sdc-2.5-0.254.el7.x86_64.rpm
-   
-
-# 7. Run the installation script
 ```
+
+# 7. Run the installation script, will take 20+ minutes to finish
+```
+   $ cd openshiftandscaleio 
    $ install-openshift.sh
 ```
 
