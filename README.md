@@ -1,4 +1,4 @@
-Install RedHat OpenShift Origin on your CentOS 7 box.
+Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
 
 ## Installation
 
