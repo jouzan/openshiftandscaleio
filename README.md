@@ -46,3 +46,6 @@ $ export PASSWORD=password
    $ install-openshift.sh
 ```
 
+# 8. Login via CLI, you will be using the username password you provided in step 5
+```
+   $ oc login  
