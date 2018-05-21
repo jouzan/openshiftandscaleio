@@ -48,4 +48,19 @@ $ export PASSWORD=password
 
 ## 8. Login via CLI, you will be using the username password you provided in step 5
 ```
-   $ oc login  
+   $ oc login
+```
+## 9. Create the SECRETE STORAGECLASS AND SECRET 
+```
+   $ oc login
+   $ oc create -f siosc.yaml
+   $ oc create –f secret.yaml
+   $ oc create -f siopvc.yaml
+   $ oc get pvc
+   $ oc describe pvc pvc-sio
+```
+
+
+
+   
+   
