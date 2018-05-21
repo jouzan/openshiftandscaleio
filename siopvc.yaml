@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+ApiVersion: v1
+metadata:
+  name: pvc-sio
+spec:
+  storageClassName: scaleio-storage
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+
