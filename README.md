@@ -2,7 +2,7 @@ Install RedHat OpenShift Origin on your CentOS 7 box.
 
 ## Installation
 
-1. Use a CentOS7 Linux host [I suggest you install minimume => CentOS-7-x86_64-DVD-1611.iso]
+1. Use a CentOS7 Linux host [I suggest you install minimum => CentOS-7-x86_64-DVD-1611.iso]
 
 2. Do the following
 ```
@@ -17,7 +17,7 @@ Install RedHat OpenShift Origin on your CentOS 7 box.
    $ ssh-copy-id root@CentOS-IP
 ```
 
-5. Clone the repository
+5. Clone the repository 
 ```
    $ git clone  https://github.com/jouzan/openshiftandscaleio.git
 ```
