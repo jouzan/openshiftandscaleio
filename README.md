@@ -2,22 +2,25 @@ Install RedHat OpenShift Origin on your CentOS 7 box.
 
 ## Installation
 
-1. Use a CentOS7 Linux host [I suggest you install=> CentOS-7-x86_64-DVD-1611.iso]
+1. Use a CentOS7 Linux host [I suggest you install minimume => CentOS-7-x86_64-DVD-1611.iso]
 
-2. Do the following  
+2. Do the following
+```
    $ yum update -y      
    $ reboot       
-   $ yum install -y git docker vim docker
+   $ yum install -y git docker vim docker ansible
+```
    
-3. Create a ssh key and copy it using the folllowing commands    
+3. Create a ssh key and copy it using the folllowing commands
+```
    $ ssh-keygen    
    $ ssh-copy-id root@CentOS-IP
+```
 
-4. Install Ansible    
-   $ yum install -y ansible 
-
-5. Clone the repository       
+5. Clone the repository
+```
    $ git clone  https://github.com/jouzan/openshiftandscaleio.git
+```
    
 # 6. Define mandatory variables for the installation process
 ```
