@@ -22,7 +22,7 @@ Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
    $ git clone  https://github.com/jouzan/openshiftandscaleio.git
 ```
 
-# 5. Define mandatory variables for the installation process
+## 5. Define mandatory variables for the installation process
 ```
 # Domain name to access the cluster
 $ export DOMAIN=yourdomain.local 
@@ -34,18 +34,18 @@ $ export USERNAME=TheUserUAreLoggedInWith
 $ export PASSWORD=password
 ```
 
-# 6. Install ScaleIO SDC and register with the ScaleIO Storage systen and check that you can provision a volume
+## 6. Install ScaleIO SDC and register with the ScaleIO Storage systen and check that you can provision a volume
 ```
    $ cd openshiftandscaleio
    $ MDM_IP=MDM1IP,MDM2IP rpm -ivh EMC-ScaleIO-sdc-2.5-0.254.el7.x86_64.rpm
 ```
 
-# 7. Run the installation script, will take 20+ minutes to finish
+## 7. Run the installation script, will take 20+ minutes to finish
 ```
    $ cd openshiftandscaleio 
    $ install-openshift.sh
 ```
 
-# 8. Login via CLI, you will be using the username password you provided in step 5
+## 8. Login via CLI, you will be using the username password you provided in step 5
 ```
    $ oc login  
