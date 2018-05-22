@@ -3,7 +3,8 @@ Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
 ## Installation
 
 1. Use a CentOS7 Linux host [I suggest you install minimum => CentOS-7-x86_64-DVD-1611.iso]
-
+   make sure to have the host name in dns, also create  A record named console pointing to the server IP 
+   
 2. Do the following
 ```
    $ yum update -y      
