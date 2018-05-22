@@ -9,7 +9,7 @@ Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
 ```
    $ yum update -y      
    $ reboot       
-   $ yum install -y git docker vim docker ansible
+   $ yum install -y git docker vim ansible
 ```
    
 3. Create a ssh key and copy it using the folllowing commands
