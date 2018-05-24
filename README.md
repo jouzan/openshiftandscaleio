@@ -8,22 +8,27 @@ Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
 2. Do the following
 ```
    $ yum update -y      
-   $ reboot       
-   $ yum install -y git docker vim ansible
+   $ reboot   
 ```
    
-3. Create a ssh key and copy it using the folllowing commands
+3. Download and install the folloking kernel  3.10.0-693.21.1.el7 ---->so the SDC does work
+```
+    $ yum install -y kernel-plus-3.10.0-693.21.1.el7.centos.plus.x86_64.rpm 
+    $ reboot to the new kernel
+    $ yum install -y git docker ansible vim wget
+
+4. Create a ssh key and copy it using the folllowing commands
 ```
    $ ssh-keygen    
    $ ssh-copy-id root@CentOS-IP
 ```
 
-4. Clone the repository 
+5. Clone the repository 
 ```
    $ git clone  https://github.com/jouzan/openshiftandscaleio.git
 ```
 
-## 5. Define mandatory variables for the installation process
+## 6. Define mandatory variables for the installation process
 ```
 # Domain name to access the cluster
 $ export DOMAIN=yourdomain.local 
@@ -35,23 +40,23 @@ $ export USERNAME=TheUserUAreLoggedInWith
 $ export PASSWORD=password
 ```
 
-## 6. Install ScaleIO SDC and register with the ScaleIO Storage systen and check that you can provision a volume
+## 7. Install ScaleIO SDC and register with the ScaleIO Storage systen and check that you can provision a volume
 ```
    $ cd openshiftandscaleio
    $ MDM_IP=MDM1IP,MDM2IP rpm -ivh EMC-ScaleIO-sdc-2.5-0.254.el7.x86_64.rpm
 ```
 
-## 7. Run the installation script, will take 20+ minutes to finish
+## 8. Run the installation script, will take 20+ minutes to finish
 ```
    $ cd openshiftandscaleio 
    $ install-openshift.sh
 ```
 
-## 8. Login via CLI, you will be using the username password you provided in step 5
+## 9. Login via CLI, you will be using the username password you provided in step 5
 ```
    $ oc login
 ```
-## 9. Create the SECRETE STORAGECLASS AND SECRET 
+## 10. Create the SECRETE STORAGECLASS AND SECRET 
 ```
    $ oc login
    $ oc create -f siosc.yaml
