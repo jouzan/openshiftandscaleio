@@ -11,7 +11,7 @@ Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
    $ reboot   
 ```
    
-3. Download and install the folloking kernel  3.10.0-693.21.1.el7 ---->so the SDC does work
+3. Download and install the kernel  3.10.0-693.21.1.el7 ---->so the SDC works
 ```
     $ yum install -y kernel-plus-3.10.0-693.21.1.el7.centos.plus.x86_64.rpm 
     $ reboot to the new kernel
