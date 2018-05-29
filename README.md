@@ -30,13 +30,13 @@ Install RedHat OpenShift 3.9 Origin on your CentOS 7 box.
 
 ## 6. Define mandatory variables for the installation process
 ```
-# Domain name to access the cluster
+Domain name to access the cluster
 $ export DOMAIN=yourdomain.local 
 
-# User created after installation [I used root, for my tests]
+User created after installation [I used root, for my tests]
 $ export USERNAME=TheUserUAreLoggedInWith      
 
-# Password for the user
+Password for the user
 $ export PASSWORD=password
 ```
 
